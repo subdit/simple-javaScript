@@ -5,7 +5,7 @@ const counterValueEl = document.querySelector('.counter__value');
 const resetButtonEl = document.querySelector('.counter__reset-button');
 const counterTitleEl = document.querySelector('.counter__title');
 // reset function
-function resetButton() {
+const resetButton = () => {
   // set counter value to 0
   counterValueEl.textContent = 0;
   // reset background color
@@ -18,11 +18,11 @@ function resetButton() {
 
   // unfocus (blur) reset button
   resetButtonEl.blur();
-}
+};
 resetButtonEl.addEventListener('click', resetButton);
 
 // decrease counter function
-function decreamentCounter() {
+const decreamentCounter = () => {
   // Get current value of counter on Click
   const currentValue = counterValueEl.textContent;
   // convert value to number
@@ -38,11 +38,11 @@ function decreamentCounter() {
   counterValueEl.textContent = newValue;
   //unfocus (blur) button
   decreaseButtonEl.blur();
-}
+};
 decreaseButtonEl.addEventListener('click', decreamentCounter);
 
 // increase counter function
-function increamentCounter() {
+const increamentCounter = () => {
   // Get current value of counter on Click
   const currentValue = counterValueEl.textContent;
   // convert value to number
@@ -65,7 +65,7 @@ function increamentCounter() {
   counterValueEl.textContent = newValue;
   // unfocus (blur) button
   increaseButtonEl.blur();
-}
+};
 
 increaseButtonEl.addEventListener('click', increamentCounter);
 document.addEventListener('keydown', increamentCounter);
