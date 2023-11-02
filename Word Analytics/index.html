@@ -18,10 +18,40 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-    <script sre="scripts.js"></script>
+    <script sre="scripts.js" defer></script>
     <title>Word Analytics</title>
   </head>
   <body>
-    <h2>Word Analtytics App</h2>
+    <div class="backgound"></div>
+    <h1 class="first-heading">
+      Word <span class="first-heading--special">Analytics</span>
+    </h1>
+    <div class="container">
+      <textarea class="textarea"></textarea>
+      <section class="stats">
+        <section class="stat">
+          <span class="stat__number stat__number--words">0</span>
+          <h2 class="second-heading">Words</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--characters">0</span>
+          <h2 class="second-heading">Characters</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--twitter">280</span>
+          <h2 class="second-heading">Twitter</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--words">2200</span>
+          <h2 class="second-heading">Facebook</h2>
+        </section>
+      </section>
+    </div>
+    <footer class="footer">
+      <small class="copyright"
+        >&copy;Copyright by <span>Kas.</span> All rights reserved</small
+      >
+      <small class="data">Last Checked limits: 15 days ago</small>
+    </footer>
   </body>
 </html>
