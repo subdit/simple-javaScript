@@ -1,4 +1,5 @@
 # simple-Vanilla-javaScript Project
-## Using CSS and HTML.
-## Responsive design using @media query and utilize VW. 
+### Using CSS and HTML.
+### Many methods using Javascript 
+### Responsive design using @media query and utilize VW. 
 
