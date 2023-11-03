@@ -6,9 +6,14 @@ const wordNumberEl = document.querySelector('.stat__number--words');
 
 textareaEl.addEventListener('input', function () {
   // get new numbers of the character
+  let numberOfWords = textareaEl.value.split(' ').length; // in the array of input
+  if (textareaEl.value.length === 0) {
+    // check the value if = 0;
+    numberOfWords = 0;
+  }
   const numbersOfCharacters = textareaEl.value.length;
   const twitterCharacterLeft = 280 - numbersOfCharacters;
-  const facebookCharacterLeft = 200 - numbersOfCharacters;
+  const facebookCharacterLeft = 2200 - numbersOfCharacters;
   // Add logic if limit character is excessed
   if (twitterCharacterLeft < 0) {
     twitterNumberEl.classList.add('stat__number--limit');
@@ -22,7 +27,7 @@ textareaEl.addEventListener('input', function () {
     facebookNumberEl.classList.remove('stat__number--limit'); // to remove  the class other wise it will stay on Red.
   }
   // Set counting new numbers
-
+  wordNumberEl.textContent = numberOfWords;
   characterNumberEl.textContent = numbersOfCharacters;
   twitterNumberEl.textContent = twitterCharacterLeft;
   facebookNumberEl.textContent = facebookCharacterLeft;
