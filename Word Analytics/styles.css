@@ -88,6 +88,9 @@ textarea {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.stat__number--limit {
+  color: red;
+}
 .second-heading {
   font-size: 14px;
   text-transform: uppercase;
